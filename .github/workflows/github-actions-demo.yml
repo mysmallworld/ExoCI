@@ -12,6 +12,5 @@ jobs:
         uses: actions/setup-node@v4
       - run: node hello.js
       - name: Use Vitest
-        uses: actions/setup-Vitest@v4
       - run: npm run test
       - run: echo "test ok"
