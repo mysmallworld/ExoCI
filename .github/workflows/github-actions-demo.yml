@@ -10,10 +10,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Use Node.js
         uses: actions/setup-node@v4
-        with:
-          cache: 'npm'
-      - name: Execute Unit tests
-      - run: npm ci
-      - run: npm run test
-      - run: echo "tests ok"
       - run: node hello.js
+      - name: Use Vitest
+        uses: actions/setup-Vitest@v4
+      - run: npm run test
+      - run: echo "test ok"
